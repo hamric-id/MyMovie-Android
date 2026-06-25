@@ -38,8 +38,10 @@ dependencies {
     implementation(libs.squareup.okhttp3)
     implementation(libs.squareup.okhttp3.logging.interceptor)
 
+    //gson serialization
+    implementation(libs.google.code.gson)
+
     // Coroutines
-    implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
 
     //hilt dagger di
