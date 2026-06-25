@@ -29,8 +29,8 @@ class GetGenresUseCaseTest {
     @Test
     fun `invoke should return success with genres when repository returns success`() = runTest {
         val expectedGenres = listOf(
-            Genre(id = 28u, name = "Action"),
-            Genre(id = 35u, name = "Comedy")
+            Genre(id = 28, name = "Action"),
+            Genre(id = 35, name = "Comedy")
         )
         whenever(mockRepository.getGenres()).thenReturn(Result.success(expectedGenres))
 

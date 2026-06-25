@@ -41,9 +41,9 @@ class GenresViewModelTest {
     @Test
     fun `loadGenres should update state to Success with genres when use case succeeds`() = runTest {
         val expectedGenres = listOf(
-            Genre(id = 28u, name = "Action"),
-            Genre(id = 35u, name = "Comedy"),
-            Genre(id = 18u, name = "Drama")
+            Genre(id = 28, name = "Action"),
+            Genre(id = 35, name = "Comedy"),
+            Genre(id = 18, name = "Drama")
         )
         whenever(mockUseCase()).thenReturn(Result.success(expectedGenres))
 
@@ -83,7 +83,7 @@ class GenresViewModelTest {
 
     @Test
     fun `loadGenres should show Loading state before each request`() = runTest {
-        val genres = listOf(Genre(id = 28u, name = "Action"))
+        val genres = listOf(Genre(id = 28, name = "Action"))
         whenever(mockUseCase()).thenReturn(Result.success(genres))
 
         val initialState = viewModel.uiState.first()
@@ -98,8 +98,8 @@ class GenresViewModelTest {
 
     @Test
     fun `loadGenres should handle multiple rapid calls correctly`() = runTest {
-        val genres1 = listOf(Genre(id = 28u, name = "Action"))
-        val genres2 = listOf(Genre(id = 35u, name = "Comedy"))
+        val genres1 = listOf(Genre(id = 28, name = "Action"))
+        val genres2 = listOf(Genre(id = 35, name = "Comedy"))
 
         whenever(mockUseCase())
             .thenReturn(Result.success(genres1))

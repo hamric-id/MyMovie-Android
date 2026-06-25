@@ -30,8 +30,8 @@ class GenreRepositoryImplTest {
     @Test
     fun `getGenres should return success with list of genres when API call is successful`() = runTest {
         val mockGenreResponse = listOf(
-            GenreResponse(id = 28u, name = "Action"),
-            GenreResponse(id = 35u, name = "Comedy")
+            GenreResponse(id = 28, name = "Action"),
+            GenreResponse(id = 35, name = "Comedy")
         )
         val mockGenresResponse = GenresResponse(mockGenreResponse)
 
@@ -43,9 +43,9 @@ class GenreRepositoryImplTest {
         val genres = result.getOrNull()
         assertThat(genres).isNotNull()
         assertThat(genres).hasSize(2)
-        assertThat(genres?.get(0)?.id).isEqualTo(28u)
+        assertThat(genres?.get(0)?.id).isEqualTo(28)
         assertThat(genres?.get(0)?.name).isEqualTo("Action")
-        assertThat(genres?.get(1)?.id).isEqualTo(35u)
+        assertThat(genres?.get(1)?.id).isEqualTo(35)
         assertThat(genres?.get(1)?.name).isEqualTo("Comedy")
     }
 
