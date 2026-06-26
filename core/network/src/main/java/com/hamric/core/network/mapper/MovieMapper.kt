@@ -13,7 +13,7 @@ fun MovieResponse.toDomainModel(): Movie {
         releaseDate = releaseDate,
         voteAverage = voteAverage,
         voteCount = voteCount,
-        genreIds = genreIds,
+        genreIds = genreIds?: emptyList(),
         originalLanguage = originalLanguage,
         originalTitle = originalTitle,
         popularity = popularity,

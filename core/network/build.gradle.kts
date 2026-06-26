@@ -10,7 +10,6 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        buildConfigField("String", "TMDB_API_READ_ACCESS_TOKEN", "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YTU4ZDUwZDhjNmU2MmNjOTU3M2Y2ZDhiNDM5YmNmYiIsIm5iZiI6MTc4MTI1MzE3MC4xNjcsInN1YiI6IjZhMmJjNDMyNDk0MDVjNTA3MmRiZGE0NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TSiwQqCD1B9yKH__JcVn24y8H7wa9X9sB7zi0o55EiQ\"")
         buildConfigField("String", "TMDB_API_KEY", "\"5a58d50d8c6e62cc9573f6d8b439bcfb\"")
         //not placed on local.properties because it usually noted on .GITIGNORE. this is just for make HR Team easier to test
     }
