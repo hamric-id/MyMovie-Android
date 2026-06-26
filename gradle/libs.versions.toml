@@ -24,6 +24,8 @@ mockitoKotlin = "5.2.1"
 archCoreTesting = "2.2.0"
 googleCodeGson = "2.10.1"
 turbine = "1.0.0"
+pierfrancescosoffrittiAndroidyoutubeplayer = "13.0.0"
+animation = "1.11.3"
 
 
 [libraries]
@@ -63,6 +65,9 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingCompose" }
 cash-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 androidx-paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "pagingCompose" }
+androidx-paging-testing = { group = "androidx.paging", name = "paging-testing", version.ref = "pagingCompose" }
+pierfrancescosoffritti-androidyoutubeplayer-core = { group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "core", version.ref = "pierfrancescosoffrittiAndroidyoutubeplayer" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "animation" }
 
 
 [plugins]

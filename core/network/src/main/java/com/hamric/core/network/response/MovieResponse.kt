@@ -20,7 +20,7 @@ data class MovieResponse(
     @SerializedName("vote_count")
     val voteCount: Int,
     @SerializedName("genre_ids")
-    val genreIds: List<Int> = emptyList(),
+    val genreIds: List<Int>? = null,
     @SerializedName("original_language")
     val originalLanguage: String? = null,
     @SerializedName("original_title")
